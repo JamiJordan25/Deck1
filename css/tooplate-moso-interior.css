@@ -58,7 +58,6 @@ body {
 /*---------------------------------------
   TYPOGRAPHY               
 -----------------------------------------*/
-
 h2,
 h3,
 h4,
@@ -140,7 +139,6 @@ strong {
 .tooplate-green {
 	color: var(--custom-btn-bg-color);
 }
-
 
 /*---------------------------------------
   SECTION               
@@ -227,7 +225,6 @@ strong {
   margin-left: 5px;
 }
 
-
 /*---------------------------------------
   CUSTOM LINK               
 -----------------------------------------*/
@@ -269,7 +266,6 @@ strong {
   background: var(--custom-btn-bg-color);
 }
 
-
 /*---------------------------------------
   CUSTOM BADGE               
 -----------------------------------------*/
@@ -298,7 +294,6 @@ strong {
   right: 0;
   left: 0;
 }
-
 
 /*---------------------------------------
   CUSTOM BUTTON               
@@ -331,7 +326,6 @@ strong {
   border-color: var(--white-color);
   color: var(--secondary-color);
 }
-
 
 /*---------------------------------------
   NAVIGATION              
@@ -494,19 +488,17 @@ strong {
   top: 8px;
 }
 
-
 /*---------------------------------------
   SITE HEADER              
 -----------------------------------------*/
 .site-header {
-  background-image: url('../images/empty-living-room-with-blue-sofa-plants-table-empty-white-wall-background-3d-rendering.jpg');
+  background-image: url('../images/slider-image.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   padding-top: 150px;
   padding-bottom: 150px;
 }
-
 
 /*---------------------------------------
   HERO              
@@ -516,6 +508,27 @@ strong {
   padding-top: 150px;
   padding-bottom: 150px;
   min-height: 580px;
+  background-image: url('../images/hero-image.jpg');
+  background-size: 110%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(255,255,255,0.1) 0%, rgba(0,0,0,0) 30%);
+  z-index: 0;
+}
+
+.hero-text {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 800px;
+  position: relative;
+  z-index: 1;
 }
 
 @media screen and (min-width: 991px) {
@@ -560,7 +573,6 @@ strong {
   color: var(--white-color);
 }
 
-
 /*---------------------------------------
   ABOUT              
 -----------------------------------------*/
@@ -588,7 +600,7 @@ strong {
   FEATURED              
 -----------------------------------------*/
 .featured-section {
-  background-image: url('../images/empty-living-room-with-blue-sofa-plants-table-empty-white-wall-background-3d-rendering.jpg');
+  background-image: url('../images/featured-bg.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -597,7 +609,6 @@ strong {
 .featured-icon {
   font-size: var(--h5-font-size);
 }
-
 
 /*---------------------------------------
   REVIEWS              
@@ -716,7 +727,6 @@ strong {
   font-weight: var(--font-weight-normal);
 }
 
-
 /*---------------------------------------
   SHOP              
 -----------------------------------------*/
@@ -819,7 +829,6 @@ strong {
   color: var(--white-color);
 }
 
-
 /*---------------------------------------
   CONTACT               
 -----------------------------------------*/
@@ -841,7 +850,6 @@ strong {
   display: block;
   border-radius: var(--border-radius-medium);
 }
-
 
 /*---------------------------------------
   CUSTOM FORM               
@@ -894,7 +902,6 @@ strong {
   border-color: transparent;
 }
 
-
 /*---------------------------------------
   FILTER FORM              
 -----------------------------------------*/
@@ -916,7 +923,6 @@ strong {
 .filter-form .form-check-label {
   color: var(--p-color);
 }
-
 
 /*---------------------------------------
   SITE FOOTER              
@@ -948,7 +954,6 @@ strong {
 .site-footer .social-icon-link {
   margin-top: 10px;
 }
-
 
 /*---------------------------------------
   SOCIAL ICON               
@@ -995,7 +1000,6 @@ strong {
 .social-icon-whatsapp {
   color: var(--whatsapp-color);
 }
-
 
 /*---------------------------------------
   RESPONSIVE STYLES               
